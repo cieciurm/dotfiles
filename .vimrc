@@ -11,12 +11,14 @@ set statusline=%<%F%h%m%r%h%w%y\ %{&ff}\ %{strftime(\"%c\",getftime(expand(\"%:p
 
 set autoindent 
 set smartindent
-"set expandtab
 set shiftwidth=4
 set tabstop=4 
 set softtabstop=4
 
 set encoding=utf-8
 set nobomb
+syntax on
 
 set wildmenu
+
+colorscheme grb256
