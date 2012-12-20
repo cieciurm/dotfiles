@@ -1,7 +1,5 @@
-set titlestring=vim\ %{expand(\"%t\")} "window title
-set title "enable window title 
-
 set laststatus=2
+set history=32
 
 set number 
 set showcmd
@@ -11,9 +9,9 @@ set statusline=%<%F%h%m%r%h%w%y\ %{&ff}\ %{strftime(\"%c\",getftime(expand(\"%:p
 
 set autoindent 
 set smartindent
-set shiftwidth=4
-set tabstop=4 
-set softtabstop=4
+set shiftwidth=2
+set tabstop=2 
+set softtabstop=2
 
 set encoding=utf-8
 set nobomb
