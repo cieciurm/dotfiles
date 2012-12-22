@@ -1,5 +1,7 @@
+set titlestring=vim\ %{expand(\"%t\")} "window title
+set title "enable window title 
+
 set laststatus=2
-set history=32
 
 set number 
 set showcmd
@@ -18,5 +20,10 @@ set nobomb
 syntax on
 
 set wildmenu
+set showmatch 
 
-colorscheme grb256
+set t_Co=256
+"colorscheme inkpot
+colorscheme 256-grayvim
+"colorscheme grb256
+"colorscheme molokai
