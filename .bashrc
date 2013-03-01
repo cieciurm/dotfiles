@@ -1,4 +1,5 @@
-    PS1='\[\e[1;36m\]\u\[\e[m\]@\[\e[1;31m\]\h\[\e[m\] in \[\e[1;33m\]\w\[\e[m\] \$ '
+PS1='[\[\e[1;32m\]\u\[\e[m\]@\[\e[1;34m\]\h\[\e[m\] \[\e[1;33m\]\w\[\e[m\]] ♠ '
+#PS1='\[\e[1;36m\]\u\[\e[m\]@\[\e[1;31m\]\h\[\e[m\] in \[\e[1;33m\]\w\[\e[m\] \$ '
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -23,8 +24,6 @@ fi
 
 export EDITOR=vim
 
-#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
-
-#alias tmux="TERM=screen-256color-bce tmux"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
