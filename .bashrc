@@ -1,3 +1,4 @@
+#         (red)user@(blue)host (yellow)directory 
 PS1='\[\e[1;34m\]\u\[\e[m\]@\[\e[1;31m\]\h\[\e[m\] \[\e[1;33m\]\w\[\e[m\] ♠ '
 #PS1='\[\e[1;36m\]\u\[\e[m\]@\[\e[1;31m\]\h\[\e[m\] in \[\e[1;33m\]\w\[\e[m\] \$ '
 
