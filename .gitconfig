@@ -21,5 +21,6 @@
 	untracked = red
 [alias]
 	st = status
+	sts = status -s
 	ci = commit
 	co = checkout
