@@ -10,6 +10,4 @@ function prompt
     Write-Host $location -BackgroundColor DarkMagenta -ForegroundColor Black
     Write-Host ">" -NoNewline
     return " "
-
-    # "PS " + $(get-location) + " [$(Get-Date -format T)]> "
 }
