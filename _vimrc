@@ -11,6 +11,7 @@ set smartindent
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
+set expandtab
 
 set encoding=utf-8
 set nobomb
@@ -20,5 +21,6 @@ set wildmenu
 set showmatch
 
 colorscheme inkpot
+set lines=50 columns=100
 
 set guifont=Consolas:h14
