@@ -1,43 +1,62 @@
 [user]
-    name = Mateusz Cieciura
-    email = mateusz5000@gmail.com
+	name = Mateusz Cieciura
+	email = mateusz.cieciura@gmail.com
 [color]
-    ui = true
-    branch = auto
-    diff = auto
-    status = auto
+	ui = true
+	branch = auto
+	diff = auto
+	status = auto
+	interactive = true
 [color "branch"]
-    current = yellow reverse
-    local = yellow
-    remote = green
+	current = magenta reverse
+	local = yellow
+	remote = green
 [color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
 [color "status"]
-    added = yellow
-    changed = green bold
-    untracked = red
+	added = green bold
+	changed = yellow bold
+	untracked = red reverse
 [alias]
-    s = status
-    st = status
-    sts = status -s
-    ci = commit
-    a = add
-    co = checkout
-    gr = log --graph --abbrev-commit --decorate --date=relative --format=format:'%h - %ar %s - %an%d' --all
-    gr2 = log --oneline --graph --decorate
-    b = branch
-    l = log
-    dt = difftool
-    mt = mergetool
-    df = diff
-[merge]
-    tool = kdiff3
-[mergetool]
-    prompt = false
+	st = status
+	sts = status -s -b
+	s = status -s -b
+	ci = commit
+    amend = commit --amend
+	co = checkout
+	b = branch
+	f = fetch
+	l = log
+    ll = log -10 --graph --abbrev-commit --decorate --date=relative --oneline
+	bl = gui blame
+	dt = difftool
+	dtc = difftool --cached
+	mt = mergetool
+	df = diff
+    dc = diff --cached
+	a = add
+    aa = add --all
+	reb = rebase
+	pr = pull --rebase
+	sh = show
+[core]
+	autocrlf = false
+	editor = gvim
 [diff]
-    tool = kdiff3
+	tool = kdiff3
+	guitool = kdiff3
+[merge]
+	tool = kdiff3
 [difftool]
-    prompt = false
+	prompt = false
+[mergetool "kdiff3"]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+[difftool "kdiff3"]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+[push]
+	default = simple
+[gc]
+	auto = 0
