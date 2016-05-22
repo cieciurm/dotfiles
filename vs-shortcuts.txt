@@ -1,0 +1,3 @@
+Window.PinTab -> Ctrl+Shift+\
+Build.BuildSelection -> Shift+F6
+Project.AddClass -> Ctrl+Shift+A
