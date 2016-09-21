@@ -25,20 +25,21 @@
 	sts = status -s -b
 	s = status -s -b
 	ci = commit
-    amend = commit --amend
+	amend = commit --amend
 	co = checkout
-	b = branch
+	b = branch -v
+	bb = branch
 	f = fetch
 	l = log
-    ll = log -10 --graph --abbrev-commit --decorate --date=relative --oneline
+	ll = log -10 --graph --abbrev-commit --decorate --date=relative --oneline
 	bl = gui blame
 	dt = difftool
 	dtc = difftool --cached
 	mt = mergetool
 	df = diff
-    dc = diff --cached
+	dc = diff --cached
 	a = add
-    aa = add --all
+	aa = add --all
 	reb = rebase
 	pr = pull --rebase
 	sh = show
