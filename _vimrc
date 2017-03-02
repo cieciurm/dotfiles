@@ -22,17 +22,18 @@ syntax on
 set wildmenu
 set showmatch
 
+"colorscheme codeschool
+"colorscheme gravity
+colorscheme solarized
+set background=light
+"set lines=150 columns=450
+set lines=40 columns=150
+
+set guifont=DejaVu\ Sans\ Mono:h12
+"set guifont=Consolas:h12
+set t_Co=256
+
 set go-=T
 set go-=m
-
-colorscheme gravity
-"colorscheme solarized8_light_high
-"colorscheme inkpot
-"colorscheme codeschool
-set lines=150 columns=450
-
-"set guifont=DejaVu\ Sans\ Mono:h14
-set guifont=Consolas:h14
-set t_Co=256
 
 "map <F12> :NERDTree<CR>

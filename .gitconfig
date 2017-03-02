@@ -27,11 +27,13 @@
 	ci = commit
 	amend = commit --amend
 	co = checkout
-	b = branch -v
-	bb = branch
-	f = fetch
+	cob = checkout -b
+	b = branch
+	bb = branch -v
+	f = fetch --prune
 	l = log
 	ll = log -10 --graph --abbrev-commit --decorate --date=relative --oneline
+	lll = log -20 --graph --abbrev-commit --decorate --date=relative --oneline
 	bl = gui blame
 	dt = difftool
 	dtc = difftool --cached
@@ -41,8 +43,13 @@
 	a = add
 	aa = add --all
 	reb = rebase
-	pr = pull --rebase
+	pr = pull --rebase --prune
 	sh = show
+	mrg= merge --no-ff -e
+	ccr = log --author=cieciura --all --pretty=format:"%h%x09%an%x09%ad%x09%s"
+	open = !start chrome $(git config remote.origin.url)
+	browse = !git open
+	up = pull --rebase --prune
 [core]
 	autocrlf = false
 	editor = gvim
@@ -61,3 +68,5 @@
 	default = simple
 [gc]
 	auto = 0
+[help]
+	autocorrect= 30
