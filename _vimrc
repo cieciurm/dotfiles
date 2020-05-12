@@ -25,11 +25,11 @@ set showmatch
 color dracula
 set lines=40 columns=150
 
-set guifont=Fira\ Code:h11
-set t_Co=256
+set guifont=Fira\ Code:h12
 
 set go-=T
 set go-=m
 
+set relativenumber
 "map <F12> :NERDTreeToggle<CR>
 "ap <C-t> :CtrlP<CR>

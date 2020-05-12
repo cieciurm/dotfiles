@@ -30,10 +30,12 @@
 	cob = checkout -b
 	b = branch
 	bb = branch -v
+	bd = branch -D
 	f = fetch --prune
 	l = log
 	ll = log -10 --graph --abbrev-commit --decorate --date=relative --oneline
 	lll = log -20 --graph --abbrev-commit --decorate --date=relative --oneline
+	logline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	bl = gui blame
 	dt = difftool
 	dtc = difftool --cached
@@ -45,11 +47,6 @@
 	reb = rebase
 	pr = pull --rebase --prune
 	sh = show
-	mrg= merge --no-ff -e
-	ccr = log --author=cieciura --all --pretty=format:"%h%x09%an%x09%ad%x09%s"
-	open = !start chrome $(git config remote.origin.url)
-	browse = !git open
-	up = pull --rebase --prune
 [core]
 	autocrlf = false
 	editor = gvim
@@ -69,4 +66,4 @@
 [gc]
 	auto = 0
 [help]
-	autocorrect= 30
+	autocorrect = 10
