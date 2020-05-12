@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json.schemastore.org/omnisharp",
+    "FormattingOptions": {
+        "NewLinesForBracesInMethods": true,
+        "NewLinesForBracesInTypes": true,
+        "NewLinesForBracesInProperties": true,
+        "NewLinesForBracesInAccessors": true,
+        "NewLinesForBracesInAnonymousMethods": true,
+        "NewLinesForBracesInControlBlocks": true,
+        "NewLinesForBracesInAnonymousTypes": true,
+        "NewLinesForBracesInObjectCollectionArrayInitializers": true,
+        "NewLinesForBracesInLambdaExpressionBody": true,
+        "NewLineForElse": true,
+        "NewLineForCatch": true,
+        "NewLineForFinally": true,
+        "NewLineForMembersInObjectInit": true,
+        "NewLineForMembersInAnonymousTypes": true,
+        "NewLineForClausesInQuery": true
+    }
+}
