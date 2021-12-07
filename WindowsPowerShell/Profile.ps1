@@ -3,6 +3,7 @@ Set-Alias np notepad++
 Set-Alias vim gvim
 Set-Alias vi gvim
 Set-Alias ir iisreset
+Set-Alias checksum Get-FileHash
 function startup { Get-CimInstance -ClassName win32_operatingsystem | select lastbootuptime }
 function clean { Get-ChildItem .\ -include bin,obj -Recurse | foreach ($_) { remove-item $_.fullname -Force -Recurse } } 
 
@@ -17,14 +18,21 @@ function ga { git a $args}
 function gb { git b $args}
 function gsc($h) { git dt $h~ $h }
 
+$env:LC_ALL='C.UTF-8'
+# remove-item alias:curl
+
 function prompt {
     $time = "($(get-date -format t))"
     $location = " $(get-location) "
-    $branch = "[$(git rev-parse --abbrev-ref HEAD)]"
+    #$branch = "[$(git rev-parse --abbrev-ref HEAD)]"
+    $branch = "$(git rev-parse --abbrev-ref HEAD)"
 
     Write-Host $time -NoNewline -backgroundcolor darkgreen
     Write-Host $location -NoNewline #-backgroundcolor blue
-    Write-Host $branch -backgroundcolor darkred -NoNewline
+
+    if ($branch -ne "") {
+      Write-Host "[$branch]" -backgroundcolor darkred -NoNewline
+    }
     Write-Host "$" -NoNewline
     return " "
 
