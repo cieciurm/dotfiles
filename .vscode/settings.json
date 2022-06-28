@@ -1,14 +1,15 @@
-{	
-  "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
-  "window.zoomLevel": 0,
+{
   "editor.renderWhitespace": "all",
   "extensions.ignoreRecommendations": false,
   "workbench.editor.enablePreview": false,
   "editor.fontFamily": "Fira Code, 'Courier New', monospace",
   "editor.fontSize": 14,
-  "workbench.colorTheme": "Dracula",
   "editor.fontLigatures": true,
   "workbench.iconTheme": "vscode-icons",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.sideBar.location": "left",
+  "workbench.sideBar.location": "right",
+  "oneDarkPro.bold": true,
+  "omnisharp.enableImportCompletion": true,
+  "workbench.colorTheme": "Visual Studio Dark",
+  //"omnisharp.useModernNet": true
 }

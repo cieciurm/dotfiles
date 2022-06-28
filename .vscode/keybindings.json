@@ -1,6 +1,25 @@
 // Place your key bindings in this file to override the defaults
 [
-    { "key": "ctrl+t", "command": "workbench.action.quickOpen" },
-    { "key": "ctrl+r ctrl+g", "command": "editor.action.sortLinesAscending" },
-    { "key": "alt+enter", "command": "editor.action.quickFix" }
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+r ctrl+g",
+        "command": "editor.action.sortLinesAscending"
+    },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.quickFix"
+    },
+    {
+        "key": "ctrl+shift+\\",
+        "command": "workbench.action.pinEditor",
+        "when": "!activeEditorIsPinned"
+    },
+    {
+        "key": "ctrl+shift+\\",
+        "command": "workbench.action.unpinEditor",
+        "when": "activeEditorIsPinned"
+    }
 ]
