@@ -1,3 +1,5 @@
 Window.PinTab -> Ctrl+Shift+\
 Build.BuildSelection -> Shift+F6
 Project.AddClass -> Ctrl+Shift+A
+Edit.GoToAll -> Ctrl+T
+View.QuickActions -> Alt+Enter

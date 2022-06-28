@@ -22,10 +22,12 @@ syntax on
 set wildmenu
 set showmatch
 
-color dracula
-set lines=40 columns=150
+"color dracula
+color night-owl
+"color nord
+set lines=70 columns=180
 
-set guifont=Fira\ Code:h12
+set guifont=Fira\ Code:h13
 "set guifont=DejaVu\ Sans\ Mono:h14
 
 set go-=T
@@ -33,17 +35,17 @@ set go-=m
 
 set relativenumber
 
+:function SmallFont()
+:  set guifont=Fira\ Code:h12
+:endfunction
+
 :function BigFont()
 :  let fonts = split(&guifont, "h")
 :  let newFontSize = fonts[1] + 2
 :  let newFont = fonts[0] . "h" . newFontSize
 :  echom newFont
-":  set guifont=newFont
+":  set guifont=&newFont
 :  set guifont=Fira\ Code:h16
-:endfunction
-
-:function SmallFont()
-:  set guifont=Fira\ Code:h12
 :endfunction
 
 map <F12> :NERDTreeToggle<CR>
