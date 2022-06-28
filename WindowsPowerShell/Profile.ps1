@@ -27,13 +27,13 @@ function prompt {
     #$branch = "[$(git rev-parse --abbrev-ref HEAD)]"
     $branch = "$(git rev-parse --abbrev-ref HEAD)"
 
-    Write-Host $time -NoNewline -backgroundcolor darkgreen
-    Write-Host $location -NoNewline #-backgroundcolor blue
+    Write-Host $time -NoNewline -ForegroundColor green
+    Write-Host $location -NoNewline -ForegroundColor yellow
 
     if ($branch -ne "") {
-      Write-Host "[$branch]" -backgroundcolor darkred -NoNewline
+      Write-Host "($branch)" -ForegroundColor blue -NoNewline
     }
-    Write-Host "$" -NoNewline
+    Write-Host " $" -NoNewline
     return " "
 
     # "ps " + $(get-location) + " [$(get-date -format t)]> "
