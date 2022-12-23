@@ -3,3 +3,5 @@ Build.BuildSelection -> Shift+F6
 Project.AddClass -> Ctrl+Shift+A
 Edit.GoToAll -> Ctrl+T
 View.QuickActions -> Alt+Enter
+TestExplorer.RunAllTestsInContext -> Ctrl+U R
+TestExplorer.DebugAllTestsInContext -> Ctrl+U R
