@@ -52,12 +52,12 @@
         "list": 
         [
             {
-                "colorScheme": "Espresso Libre", //One Half Dark
+                "colorScheme": "Urple",
                 "cursorShape": "filledBox",
                 "font": 
                 {
                     "face": "CaskaydiaCove Nerd Font Mono",
-                    "size": 12
+                    "size": 10
                 },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
@@ -442,6 +442,29 @@
             "foreground": "#b8a898",
             "selectionBackground": "#c3dcff",
             "cursorColor": "#ffffff"
+        },
+        {
+          "name": "Urple",
+          "black": "#000000",
+          "red": "#b0425b",
+          "green": "#37a415",
+          "yellow": "#ad5c42",
+          "blue": "#564d9b",
+          "purple": "#6c3ca1",
+          "cyan": "#808080",
+          "white": "#87799c",
+          "brightBlack": "#5d3225",
+          "brightRed": "#ff6388",
+          "brightGreen": "#29e620",
+          "brightYellow": "#f08161",
+          "brightBlue": "#867aed",
+          "brightPurple": "#a05eee",
+          "brightCyan": "#eaeaea",
+          "brightWhite": "#bfa3ff",
+          "background": "#1b1b23",
+          "foreground": "#877a9b",
+          "selectionBackground": "#a063eb",
+          "cursorColor": "#a063eb"
         }
     ]
 }
