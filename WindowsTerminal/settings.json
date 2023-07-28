@@ -54,6 +54,8 @@
             {
                 "colorScheme": "Urple",
                 "cursorShape": "filledBox",
+                "opacity": 90,
+                "tabColor": "#012345",
                 "font": 
                 {
                     "face": "CaskaydiaCove Nerd Font Mono",
