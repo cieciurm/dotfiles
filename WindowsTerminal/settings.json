@@ -9,26 +9,18 @@
                 "action": "copy",
                 "singleLine": false
             },
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
-        },
-        {
-            "command": "paste",
-            "id": "User.paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
+            "id": "User.copy.644BA8F2"
         },
         {
             "command": 
             {
                 "action": "newTab"
             },
-            "id": "User.newTab.5DEADB41",
-            "keys": "ctrl+t"
+            "id": "User.newTab.5DEADB41"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste"
         },
         {
             "command": 
@@ -37,21 +29,50 @@
                 "split": "auto",
                 "splitMode": "duplicate"
             },
-            "id": "User.splitPane.A6751878",
-            "keys": "alt+shift+d"
+            "id": "User.splitPane.A6751878"
+        },
+        {
+            "command": "find",
+            "id": "User.find"
         },
         {
             "command": 
             {
                 "action": "closeTab"
             },
-            "id": "User.closeTab.0",
-            "keys": "ctrl+w"
+            "id": "User.closeTab.0"
         }
     ],
     "copyFormatting": "none",
     "copyOnSelect": true,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "keybindings": 
+    [
+        {
+            "id": "User.newTab.5DEADB41",
+            "keys": "ctrl+t"
+        },
+        {
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        },
+        {
+            "id": "User.closeTab.0",
+            "keys": "ctrl+w"
+        }
+    ],
     "newTabMenu": 
     [
         {
@@ -64,20 +85,19 @@
         "list": 
         [
             {
-                "colorScheme": "Gruvbox Dark",
+                "colorScheme": "Srcery", //"Edge (Dark Neon)", // "Catppuccin Frappe",
                 "cursorShape": "filledBox",
                 "font": 
                 {
                     "face": "CaskaydiaCove Nerd Font Mono",
-                    "size": 13
+                    "size": 14
                 },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
                 "opacity": 95,
                 "source": "Windows.Terminal.PowershellCore",
-                "startingDirectory": "C:\\dev",
-                "tabColor": "#012345"
+                "startingDirectory": "C:\\dev"
             },
             {
                 "colorScheme": "Night Owl",
@@ -113,11 +133,241 @@
                 "hidden": true,
                 "name": "Visual Studio Debug Console",
                 "source": "VSDebugConsole"
+            },
+            {
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": false,
+                "name": "Git Bash",
+                "source": "Git"
+            },
+            {
+                "guid": "{073d70b8-a73d-5368-bb69-64b73bef4a24}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 21",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{98a66a1d-0775-5929-a5ed-567709e49a6a}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 21",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{334b36e9-cc4f-52d1-b403-def6b93f73a6}",
+                "hidden": true,
+                "name": "Developer Command Prompt for VS 18 [Preview]",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{d0bfd7dd-2c4d-5c69-9eb6-eccbc43c21ed}",
+                "hidden": true,
+                "name": "Developer PowerShell for VS 18 [Preview]",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
     "schemes": 
     [
+      {
+        "name": "Srcery",
+        "background": "#1C1B19",
+        "foreground": "#FCE8C3",
+        "black": "#1C1B19",
+        "red": "#EF2F27",
+        "green": "#519F50",
+        "yellow": "#FBB829",
+        "blue": "#2C78BF",
+        "purple": "#E02C6D",
+        "cyan": "#0AAEB3",
+        "white": "#D4C4A8",
+        "brightBlack": "#917E6B",
+        "brightRed": "#F75341",
+        "brightGreen": "#98BC37",
+        "brightYellow": "#FED06E",
+        "brightBlue": "#68A8E4",
+        "brightPurple": "#FF5C8F",
+        "brightCyan": "#2BE4D0",
+        "brightWhite": "#FCE8C3",
+        "cursorColor": "#FCE8C3",
+        "selectionBackground": "#312F2C"
+      },
+       {
+                "name": "Edge (Light)",
+                "background": "#fafafa",
+                "foreground": "#4b505b",
+                "black": "#4b505b",
+                "red": "#d05858",
+                "green": "#608e32",
+                "yellow": "#be7e05",
+                "blue": "#5079be",
+                "purple": "#b05ccc",
+                "cyan": "#3a8b84",
+                "white": "#fafafa",
+                "brightBlack": "#4b505b",
+                "brightRed": "#d05858",
+                "brightGreen": "#608e32",
+                "brightYellow": "#be7e05",
+                "brightBlue": "#5079be",
+                "brightPurple": "#b05ccc",
+                "brightCyan": "#3a8b84",
+                "brightWhite": "#fafafa"
+            },
+            {
+                "name": "Edge (Dark)",
+                "background": "#2c2e34",
+                "foreground": "#c5cdd9",
+                "black": "#3e4249",
+                "red": "#ec7279",
+                "green": "#a0c980",
+                "yellow": "#deb974",
+                "blue": "#6cb6eb",
+                "purple": "#d38aea",
+                "cyan": "#5dbbc1",
+                "white": "#c5cdd9",
+                "brightBlack": "#3e4249",
+                "brightRed": "#ec7279",
+                "brightGreen": "#a0c980",
+                "brightYellow": "#deb974",
+                "brightBlue": "#6cb6eb",
+                "brightPurple": "#d38aea",
+                "brightCyan": "#5dbbc1",
+                "brightWhite": "#c5cdd9"
+            },
+            {
+                "name": "Edge (Dark Aura)",
+                "background": "#2b2d37",
+                "foreground": "#c5cdd9",
+                "black": "#363a49",
+                "red": "#ec7279",
+                "green": "#a0c980",
+                "yellow": "#deb974",
+                "blue": "#6cb6eb",
+                "purple": "#d38aea",
+                "cyan": "#5dbbc1",
+                "white": "#c5cdd9",
+                "brightBlack": "#363a49",
+                "brightRed": "#ec7279",
+                "brightGreen": "#a0c980",
+                "brightYellow": "#deb974",
+                "brightBlue": "#6cb6eb",
+                "brightPurple": "#d38aea",
+                "brightCyan": "#5dbbc1",
+                "brightWhite": "#c5cdd9"
+            },
+            {
+                "name": "Edge (Dark Neon)",
+                "background": "#2b2d3a",
+                "foreground": "#c5cdd9",
+                "black": "#363a4e",
+                "red": "#ec7279",
+                "green": "#a0c980",
+                "yellow": "#deb974",
+                "blue": "#6cb6eb",
+                "purple": "#d38aea",
+                "cyan": "#5dbbc1",
+                "white": "#c5cdd9",
+                "brightBlack": "#363a4e",
+                "brightRed": "#ec7279",
+                "brightGreen": "#a0c980",
+                "brightYellow": "#deb974",
+                "brightBlue": "#6cb6eb",
+                "brightPurple": "#d38aea",
+                "brightCyan": "#5dbbc1",
+                "brightWhite": "#c5cdd9"
+            },
+
+        {
+          "name": "Kanagawa",
+          "black": "#1F1F28",
+          "red": "#E82424",
+          "green": "#76946A",
+          "yellow": "#FF9E3B",
+          "blue": "#658594",
+          "purple": "#957FB8",
+          "cyan": "#9CABCA",
+          "white": "#DCD7BA",
+          "brightBlack": "#2A2A37",
+          "brightRed": "#FF5D62",
+          "brightGreen": "#98BB6C",
+          "brightYellow": "#E6C384",
+          "brightBlue": "#7FB4CA",
+          "brightPurple": "#D27E99",
+          "brightCyan": "#A3D4D5",
+          "brightWhite": "#DCD7BA",
+          "background": "#1F1F28",
+          "foreground": "#DCD7BA",
+          "selectionBackground": "#2A2A37",
+          "cursorColor": "#DCD7BA"
+        },
+        {
+            "background": "#303446",
+            "black": "#51576D",
+            "blue": "#8CAAEE",
+            "brightBlack": "#626880",
+            "brightBlue": "#8CAAEE",
+            "brightCyan": "#81C8BE",
+            "brightGreen": "#A6D189",
+            "brightPurple": "#F4B8E4",
+            "brightRed": "#E78284",
+            "brightWhite": "#A5ADCE",
+            "brightYellow": "#E5C890",
+            "cursorColor": "#F2D5CF",
+            "cyan": "#81C8BE",
+            "foreground": "#C6D0F5",
+            "green": "#A6D189",
+            "name": "Catppuccin Frappe",
+            "purple": "#F4B8E4",
+            "red": "#E78284",
+            "selectionBackground": "#626880",
+            "white": "#B5BFE2",
+            "yellow": "#E5C890"
+        },
+        {
+            "background": "#24273A",
+            "black": "#494D64",
+            "blue": "#8AADF4",
+            "brightBlack": "#5B6078",
+            "brightBlue": "#8AADF4",
+            "brightCyan": "#8BD5CA",
+            "brightGreen": "#A6DA95",
+            "brightPurple": "#F5BDE6",
+            "brightRed": "#ED8796",
+            "brightWhite": "#A5ADCB",
+            "brightYellow": "#EED49F",
+            "cursorColor": "#F4DBD6",
+            "cyan": "#8BD5CA",
+            "foreground": "#CAD3F5",
+            "green": "#A6DA95",
+            "name": "Catppuccin Macchiato",
+            "purple": "#F5BDE6",
+            "red": "#ED8796",
+            "selectionBackground": "#5B6078",
+            "white": "#B8C0E0",
+            "yellow": "#EED49F"
+        },
+        {
+            "background": "#1E1E2E",
+            "black": "#45475A",
+            "blue": "#89B4FA",
+            "brightBlack": "#585B70",
+            "brightBlue": "#89B4FA",
+            "brightCyan": "#94E2D5",
+            "brightGreen": "#A6E3A1",
+            "brightPurple": "#F5C2E7",
+            "brightRed": "#F38BA8",
+            "brightWhite": "#A6ADC8",
+            "brightYellow": "#F9E2AF",
+            "cursorColor": "#F5E0DC",
+            "cyan": "#94E2D5",
+            "foreground": "#CDD6F4",
+            "green": "#A6E3A1",
+            "name": "Catppuccin Mocha",
+            "purple": "#F5C2E7",
+            "red": "#F38BA8",
+            "selectionBackground": "#585B70",
+            "white": "#BAC2DE",
+            "yellow": "#F9E2AF"
+        },
         {
             "background": "#272935",
             "black": "#21222C",
@@ -301,6 +551,52 @@
             "selectionBackground": "#FFFFFF",
             "white": "#E5E9F0",
             "yellow": "#EBCB8B"
+        },
+        {
+            "background": "#191724",
+            "black": "#26233A",
+            "blue": "#9CCFD8",
+            "brightBlack": "#6E6A86",
+            "brightBlue": "#9CCFD8",
+            "brightCyan": "#EBBCBA",
+            "brightGreen": "#31748F",
+            "brightPurple": "#C4A7E7",
+            "brightRed": "#EB6F92",
+            "brightWhite": "#E0DEF4",
+            "brightYellow": "#F6C177",
+            "cursorColor": "#555169",
+            "cyan": "#EBBCBA",
+            "foreground": "#E0DEF4",
+            "green": "#31748F",
+            "name": "rose-pine",
+            "purple": "#C4A7E7",
+            "red": "#EB6F92",
+            "selectionBackground": "#2A2837",
+            "white": "#E0DEF4",
+            "yellow": "#F6C177"
+        },
+        {
+            "background": "#232136",
+            "black": "#393552",
+            "blue": "#9CCFD8",
+            "brightBlack": "#817C9C",
+            "brightBlue": "#9CCFD8",
+            "brightCyan": "#EA9A97",
+            "brightGreen": "#3E8FB0",
+            "brightPurple": "#C4A7E7",
+            "brightRed": "#EB6F92",
+            "brightWhite": "#E0DEF4",
+            "brightYellow": "#F6C177",
+            "cursorColor": "#59546D",
+            "cyan": "#EA9A97",
+            "foreground": "#E0DEF4",
+            "green": "#3E8FB0",
+            "name": "rose-pine-moon",
+            "purple": "#C4A7E7",
+            "red": "#EB6F92",
+            "selectionBackground": "#312F44",
+            "white": "#E0DEF4",
+            "yellow": "#F6C177"
         }
     ],
     "themes": []
