@@ -22,13 +22,20 @@ syntax on
 set wildmenu
 set showmatch
 
-"color dracula
-color night-owl
-"color nord
+set langmenu=en_US
+let $LANG = 'en_US'
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
+
+"color catppuccin
+color srcery
+"color onedark
+"color shades_of_purple
 set lines=70 columns=180
 
-set guifont=Fira\ Code:h13
-"set guifont=DejaVu\ Sans\ Mono:h14
+"set guifont=Fira\ Code:h12
+"set guifont=DejaVu\ Sans\ Mono:h12
+set guifont=Cascadia\ Code:h14
 
 set go-=T
 set go-=m
@@ -37,18 +44,18 @@ set relativenumber
 
 :function SmallFont()
 :  set guifont=Fira\ Code:h12
-:endfunction
+endfunction
 
 :function BigFont()
 :  let fonts = split(&guifont, "h")
 :  let newFontSize = fonts[1] + 2
 :  let newFont = fonts[0] . "h" . newFontSize
 :  echom newFont
-":  set guifont=&newFont
+:  set guifont=&newFont
 :  set guifont=Fira\ Code:h16
 :endfunction
 
 map <F12> :NERDTreeToggle<CR>
-map <C-t> :CtrlPMRU<CR>
+map <C-t> :CtrlP<CR>
 map <F8> :call SmallFont()<CR>
 map <F9> :call BigFont()<CR>
