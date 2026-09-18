@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='C:/dev/ciam-api'
+let g:netrw_dirhist_0='C:\dev\ciam-api\CIAM API'
+let g:netrw_dirhist_9='C:\dev\ciam-api\pipelines\configs'
+let g:netrw_dirhist_8='C:/Users/mecc/vimfiles'
+let g:netrw_dirhist_7='C:\dev\Common'
+let g:netrw_dirhist_6='C:/dev/ciam-api/pipelines/configs'
+let g:netrw_dirhist_5='C:/dev/Orders/pipelines\templates'
+let g:netrw_dirhist_4='C:\dev\Orders\pipelines'
+let g:netrw_dirhist_3='C:\dev\ciam-infra\ExternalSystems'
+let g:netrw_dirhist_2='C:\dev\ciam-infra\pipelines'
