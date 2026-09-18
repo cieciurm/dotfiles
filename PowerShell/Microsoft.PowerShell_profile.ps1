@@ -18,7 +18,11 @@ function ga { git a $args}
 function gb { git b $args}
 function gsc($h) { git dt $h~ $h }
 
+#$TERMINAL_SETTINGS = 'C:\Users\mecc\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json'
 $env:LC_ALL='C.UTF-8'
+$env:langmenu='en_US'
+$env:LANG = 'en_US'
+
 # remove-item alias:curl
 
 function prompt {
@@ -37,4 +41,12 @@ function prompt {
     return " "
 
     # "ps " + $(get-location) + " [$(get-date -format t)]> "
+}
+
+# PowerShell parameter completion shim for the dotnet CLI
+Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
+    param($wordToComplete, $commandAst, $cursorPosition)
+        dotnet complete --position $cursorPosition "$commandAst" | ForEach-Object {
+            [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterValue', $_)
+        }
 }
